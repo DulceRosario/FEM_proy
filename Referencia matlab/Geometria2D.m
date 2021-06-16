@@ -30,12 +30,14 @@ for pto = 1:NPT  %Para cada punto hacer:
         G{pto}.gl = cgl;
         G{pto}.val = NaN;
     else
-        %Nodo de frontera
+        %Nodo de fronteras
+        %No son grados de libertad  (no son incognitas) si se conoce 
+        % su valor (condición de frontera)
         G{pto}.gl = NaN;
-        G{pto}.val = condicionFrontera( coor );
+        G{pto}.val = condicionFrontera( coor ); % o
     end
     
-    %Solución analitica
+    %Solución analitica (exacta)
         G{pto}.sol = solucionAnalitica( coor );
     
     
