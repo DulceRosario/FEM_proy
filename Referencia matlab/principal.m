@@ -57,7 +57,7 @@ unsol =inv(matrizGlobal) * vectorGlobal;
 
 %% Graficación
 
-actualizarGeometria( unsol )
+actualizarGemoetria( unsol )
 grafica2D();
 
 %%Convergencia, Error

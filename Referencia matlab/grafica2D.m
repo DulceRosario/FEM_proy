@@ -10,7 +10,7 @@ ZZ = zeros(NPT,1 );
 for pto = 1 : NPT 
     XX(pto) = G{pto}.coor(1);
     YY(pto) = G{pto}.coor(2);
-    ZZ(pto) = G{pto}.sol;
+    ZZ(pto) = G{pto}.val;
     
 end
 scatter3(XX,YY,ZZ, 10, 'r', 'filled' );
